@@ -30,13 +30,28 @@ _This is a Ruby on Rails made API meant for rock climbing. On it's outer layer i
 
 Each object has full CRUD functionality. Here are the endpoints:
 
-- _(GET / POST) /parks_
-- _`User.where(email: "*email_of_desired_admin*").update(admin: true)`_
-- _To double check admin status: `User.where(email: "*email_of_desired_admin*").first.admin?`_
+- _To (show all parks / add) a park: `(GET / POST) /parks`_
+- _To (show / update / delete) a specific park: `(GET / PATCH / DELETE) /parks/:id`_
+- _To (show all sport climbs in a park / add a sport climb to a park): `(GET / POST) /parks/:park_id/sport_climbs`_
+- _To (show all trad climbs in a park / add a trad climb to a park): `(GET / POST) /parks/:park_id/trad_climbs`_
+
+#### Note for below:
+
+The id's of the climbs are what really matters here. You can have park A's id, but if you enter a x_climb id that belongs in park B, it will still take you to whatever x_climb id is.
+
+- _To (show / update / delete) a specific sport climb: `(GET / PATCH / DELETE) /parks/:park_id/sport_climbs/:id`_
+- _To (show / update / delete) a specific trad climb: `(GET / PATCH / DELETE) /parks/:park_id/trad_climbs/:id`_
 
 ## Known Issues
 
-- _top_five scope is not working_
+- _None that I know of as of this commit_
+
+### Goals
+
+- _Sorting climbs by grade_
+- _Search function with parameters_
+- _Add links to the park / route on Mountainproject.com_
+- _Valuable notes for the park / route_
 
 ## License
 
