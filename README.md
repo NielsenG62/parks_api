@@ -44,7 +44,7 @@ The id's of the climbs are what really matters here. You can have park A's id, b
 
 ## Known Issues
 
-- _None that I know of as of this commit_
+- _Authentication does not work. Receiving error `{"status":500,"error":"Internal Server Error","exception":"#\u003cArgumentError: wrong number of arguments (given 3, expected 2)...}`_
 
 ### Goals
 
