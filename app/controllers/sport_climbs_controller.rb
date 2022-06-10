@@ -13,8 +13,8 @@ class SportClimbsController < ApplicationController
   def create
     @park = Park.find(params[:park_id])
     @sport_climb = SportClimb.create!(climb_params)
-    debugger
     climbs_json_response(@sport_climb)
+    
   end
 
   def update
