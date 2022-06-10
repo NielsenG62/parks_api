@@ -5,3 +5,20 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+park = Park.create!(park_name: "Broughton Bluff",
+                    park_city: "Troutdale")
+
+sport = SportClimb.create!(climb_name: "Red Eye",
+                            climb_grade: "5.10",
+                            climb_pitches: 1,
+                            climb_height_feet: 60,
+                            park_id: park.id)
+
+trad = TradClimb.create!(climb_name: "Gandalf's Grip",
+                          climb_grade: "5.9+",
+                          climb_pitches: 3,
+                          climb_height_feet: 200,
+                          park_id: park.id)
+
+p "Created #{park.park_name}, with climbs #{sport.climb_name} and #{trad.climb_name}"

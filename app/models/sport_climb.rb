@@ -1,0 +1,3 @@
+class SportClimb < ApplicationRecord
+  
+end

@@ -1,0 +1,3 @@
+class TradClimb < ApplicationRecord
+  
+end
