@@ -1,4 +1,4 @@
-# _Mario's Food Store_
+# _Rock climbing API_
 
 #### By _**Gabe Nielsen**_
 
