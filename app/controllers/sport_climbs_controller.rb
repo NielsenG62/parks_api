@@ -1,7 +1,7 @@
 class SportClimbsController < ApplicationController
   def index
     @park = Park.find(params[:park_id])
-    climbs_json_response(@parks.sport_climbs)
+    climbs_json_response(@park.sport_climbs)
   end
 
   def show
@@ -13,6 +13,7 @@ class SportClimbsController < ApplicationController
   def create
     @park = Park.find(params[:park_id])
     @sport_climb = SportClimb.create!(climb_params)
+    debugger
     climbs_json_response(@sport_climb)
   end
 
@@ -30,6 +31,6 @@ class SportClimbsController < ApplicationController
 
   private
   def climb_params
-    params.permit(:climb_name, :climb_grade, :climb_pitches, :climb_height_feet)
+    params.permit(:climb_name, :climb_grade, :climb_pitches, :climb_height_feet, :park_id)
   end
 end
