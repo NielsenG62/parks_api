@@ -49,6 +49,7 @@ The id's of the climbs are what really matters here. You can have park A's id, b
 ### Goals
 
 - _Sorting climbs by grade_
+- _Adding multiple climbs at once_
 - _Search function with parameters_
 - _Add links to the park / route on Mountainproject.com_
 - _Valuable notes for the park / route_
