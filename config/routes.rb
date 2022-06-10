@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  resourses :parks do
-    resourses :climbs
+  resources :parks do
+    resources :sport_climbs
+    resources :trad_climbs
   end
 end
