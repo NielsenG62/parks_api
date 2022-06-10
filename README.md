@@ -44,7 +44,7 @@ The id's of the climbs are what really matters here. You can have park A's id, b
 
 ## Known Issues
 
-- _None that I know of as of this commit_
+- _The authentication branch is having some issues. Not sure where the issue lies. This branch is bug free to my knowledge_
 
 ### Goals
 
