@@ -33,11 +33,10 @@ parks
 - _park_name (string)_
 - _park_city (string)_
 
-climbs
+climbs (automatically assigns a climb_type based on the endpoint you post in)
 
 - _climb_name (string)_
 - _climb_grade (string)_
-- _climb_type (string, currently only accepts trad and sport)_
 - _climb_pitches (integer)_
 - _climb_height_feet (integer)_
 - _park_id (integer)_
@@ -53,7 +52,7 @@ Each object has full CRUD functionality. Here are the endpoints:
 
 #### Note for below:
 
-The id's of the climbs are what really matters here. You can have park A's id, but if you enter a x_climb id that belongs in park B, it will still take you to whatever x_climb id is.
+The id's of the climbs are what really matters here. You are required to use the full route, but you could technically use any park_id or climb_type (though not advised, better to keep things clear for yourself). It will always find the climb by its id.
 
 - _To (show / update / delete) a specific sport climb: `(GET / PATCH / DELETE) /parks/:park_id/sport_climbs/:id`_
 - _To (show / update / delete) a specific trad climb: `(GET / PATCH / DELETE) /parks/:park_id/trad_climbs/:id`_
