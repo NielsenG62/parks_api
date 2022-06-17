@@ -15,7 +15,7 @@ class ParksController < ApplicationController
   end
 
   def update
-    @park = Park.find(params[:park_id])
+    @park = Park.find(params[:id])
     @park.update(park_params)
     parks_json_response(@park)
   end
