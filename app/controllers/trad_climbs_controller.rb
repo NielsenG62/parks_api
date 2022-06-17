@@ -20,14 +20,14 @@ class TradClimbsController < ApplicationController
     @park = Park.find(params[:park_id])
     @trad_climb = TradClimb.find(params[:id])
     @trad_climb.update(climb_params)
-    climbs_json_response(@trad_climb)    
+    climbs_json_response(@park)    
   end
 
   def destroy
     @park = Park.find(params[:park_id])
     @trad_climb = TradClimb.find(params[:id])
     @trad_climb.destroy
-    climbs_json_response(@trad_climb)    
+    climbs_json_response(@park)    
   end
 
   private
