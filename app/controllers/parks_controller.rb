@@ -17,11 +17,13 @@ class ParksController < ApplicationController
   def update
     @park = Park.find(params[:park_id])
     @park.update(park_params)
+    parks_json_response(@park)
   end
 
   def destroy
     @park = Park.find(params[:id])
     @park.destroy
+    parks_json_response(@park)
   end
 
   private
