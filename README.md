@@ -33,10 +33,11 @@ parks
 - _park_name (string)_
 - _park_city (string)_
 
-trad_cilmbs / sport_climbs
+climbs
 
 - _climb_name (string)_
 - _climb_grade (string)_
+- _climb_type (string, currently only accepts trad and sport)_
 - _climb_pitches (integer)_
 - _climb_height_feet (integer)_
 - _park_id (integer)_
