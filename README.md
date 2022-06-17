@@ -26,6 +26,21 @@ _This is a Ruby on Rails made API meant for rock climbing. On it's outer layer i
 - _Run `rails s`_
 - _In Postman enter `http://localhost:3000/parks`_
 
+## Parameters
+
+parks
+
+- _park_name (string)_
+- _park_city (string)_
+
+trad_cilmbs / sport_climbs
+
+- _climb_name (string)_
+- _climb_grade (string)_
+- _climb_pitches (integer)_
+- _climb_height_feet (integer)_
+- _park_id (integer)_
+
 ## Endpoints
 
 Each object has full CRUD functionality. Here are the endpoints:
