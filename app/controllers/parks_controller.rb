@@ -26,6 +26,11 @@ class ParksController < ApplicationController
     parks_json_response(@park)
   end
 
+  def search
+    @search = PgSearch.multisearch(params[:id])
+    parks_json_response(@search)
+  end
+
   private
   def park_params
     params.permit(:park_name, :park_city)
