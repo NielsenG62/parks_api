@@ -1,4 +1,10 @@
 class Climb < ApplicationRecord
+  include PgSearch::Model
+  multisearchable (
+    against: [:climb_name, :climb_grade, :climb_type, :climb_pitches]
+    additional_attributes: -> (climb) { { park_id: climb.park_id } }
+  )
+
   belongs_to :park
 
   validates :climb_name, presence: true
